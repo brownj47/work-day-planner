@@ -45,7 +45,7 @@ function colorInputs() {
 
         if (hourInputArray[i].dataset.timeindex < currentHour) {  // set passed hours to a color
             jQhour.addClass("passed")
-        } else if (hourInputArray[i].dataset.timeindex === currentHour) { // set current hour to a color
+        } else if (hourInputArray[i].dataset.timeindex == currentHour) { // set current hour to a color
             jQhour.addClass("now")
         }
         else if (hourInputArray[i].dataset.timeindex > currentHour) { // set coming hours to a color
