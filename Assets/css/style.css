@@ -1,0 +1,23 @@
+header {
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+
+.hour {
+ 
+}
+
+input {
+    width: 100%;
+    height: 4em;
+}
+.passed {
+    background-color: rgb(174, 174, 174);
+}
+.now {
+    background-color: rgb(255, 108, 108);
+}
+.future {
+    background-color: rgb(97, 140, 97);
+}
+
