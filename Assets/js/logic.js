@@ -64,7 +64,19 @@ setInterval(colorInputs, 60000); //refresh colors on the minute
 //save the data in the input to its place in the object
 //save object in local storage
 
-var hourlyEvents = {};
+var hourlyEvents = {
+    nineam: '',
+    tenam: '', 
+    elevenam: '',
+    twelvepm: '',
+    onepm: '', 
+    twopm: '',
+    threepm: '', 
+    fourpm: '', 
+    fivepm: ''
+};
+
+
 
 svBtn9.on("click", function (event) { // on click, get the value and save it 
     event.preventDefault()
@@ -125,7 +137,7 @@ svBtn5.on("click", function (event) {
 
 function renderSavedEvents() {
     var hourlyEventsMidMan = JSON.parse(localStorage.getItem("hourlyEventsStored")) // get data from local storage
-    if (hourlyEventsMidMan == "") {
+    if (hourlyEventsMidMan == null) {
         return
     }
 
